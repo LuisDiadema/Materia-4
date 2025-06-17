@@ -14,7 +14,25 @@ function ProjectsList () {
             </div>
             <div className="projects-grid">
                 <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb  tertiary-background"></div>
+                    <div className="thumb tertiary-background"></div>
+                    <h3>Luisinho Diadema</h3>
+                    <p>SP, Diadema</p>
+                    <img src= { likeFilled } height="20px" />
+                </div>
+                <div className="project-card jc-center al-center fd-center">
+                    <div className="thumb tertiary-background"></div>
+                    <h3>Luisinho Diadema</h3>
+                    <p>SP, Diadema</p>
+                    <img src= { likeFilled } height="20px" />
+                </div>
+                <div className="project-card jc-center al-center fd-center">
+                    <div className="thumb tertiary-background"></div>
+                    <h3>Luisinho Diadema</h3>
+                    <p>SP, Diadema</p>
+                    <img src= { likeFilled } height="20px" />
+                </div>
+                <div className="project-card jc-center al-center fd-center">
+                    <div className="thumb tertiary-background"></div>
                     <h3>Luisinho Diadema</h3>
                     <p>SP, Diadema</p>
                     <img src= { likeFilled } height="20px" />
@@ -26,37 +44,19 @@ function ProjectsList () {
                     <img src= { likeFilled } height="20px" />
                 </div>
                 <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb  tertiary-background"></div>
+                    <div className="thumb tertiary-background"></div>
                     <h3>Luisinho Diadema</h3>
                     <p>SP, Diadema</p>
                     <img src= { likeFilled } height="20px" />
                 </div>
                 <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb  tertiary-background"></div>
+                    <div className="thumb tertiary-background"></div>
                     <h3>Luisinho Diadema</h3>
                     <p>SP, Diadema</p>
                     <img src= { likeFilled } height="20px" />
                 </div>
                 <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb  tertiary-background"></div>
-                    <h3>Luisinho Diadema</h3>
-                    <p>SP, Diadema</p>
-                    <img src= { likeFilled } height="20px" />
-                </div>
-                <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb  tertiary-background"></div>
-                    <h3>Luisinho Diadema</h3>
-                    <p>SP, Diadema</p>
-                    <img src= { likeFilled } height="20px" />
-                </div>
-                <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb  tertiary-background"></div>
-                    <h3>Luisinho Diadema</h3>
-                    <p>SP, Diadema</p>
-                    <img src= { likeFilled } height="20px" />
-                </div>
-                <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb  tertiary-background"></div>
+                    <div className="thumb tertiary-background"></div>
                     <h3>Luisinho Diadema</h3>
                     <p>SP, Diadema</p>
                     <img src= { likeFilled } height="20px" />
