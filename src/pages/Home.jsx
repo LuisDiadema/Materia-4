@@ -2,17 +2,16 @@ import Header from "../Componentes/Header/Header"
 import Button from "../Componentes/Button/Button"
 import Hero from "../Componentes/Hero/Hero"
 import Footer from "../Componentes/Footer/Footer"
+import ProjectsList from '../Componentes/PorjectsList/ProjectsList'
 
 function Home () {
     return (
         <>
         <Header />
-        <h1>Home</h1>
-        <p>Subtitulo</p>
         <div className="container">
             <Hero />
+            <ProjectsList />
         </div>
-        <Button buttonStyle="primary" arrow >Luis Gostoso</Button>
         <Footer />
         </>
     )

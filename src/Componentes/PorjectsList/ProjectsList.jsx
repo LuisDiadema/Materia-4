@@ -8,11 +8,53 @@ function ProjectsList () {
     return (
         <div className="projects-section">
             <div className="projects-hero">
-                <h1>Follow Our Projects</h1>
+                <h2>Follow Our Projects</h2>
                 <p>It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.</p>
             </div>
             <div className="projects-grid">
-                <div className="projects-card d-flex jc-center al-center fd-clomun">
+                <div className="project-card d-flex jc-center al-center fd-cloumn">
+                    <div className="thumb tertiary-background"></div>
+                    <h3>João Silvia</h3>
+                    <p>BH, Brasil</p>
+                    <img src={ LikedFilled } />
+                </div>
+                <div className="project-card d-flex jc-center al-center fd-cloumn">
+                    <div className="thumb tertiary-background"></div>
+                    <h3>João Silvia</h3>
+                    <p>BH, Brasil</p>
+                    <img src={LikedFilled} />
+                </div>
+                <div className="project-card d-flex jc-center al-center fd-cloumn">
+                    <div className="thumb tertiary-background"></div>
+                    <h3>João Silvia</h3>
+                    <p>BH, Brasil</p>
+                    <img src={ LikedFilled } />
+                </div>
+                <div className="project-card d-flex jc-center al-center fd-cloumn">
+                    <div className="thumb tertiary-background"></div>
+                    <h3>João Silvia</h3>
+                    <p>BH, Brasil</p>
+                    <img src={ LikedFilled } />
+                </div>
+                <div className="project-card d-flex jc-center al-center fd-cloumn">
+                    <div className="thumb tertiary-background"></div>
+                    <h3>João Silvia</h3>
+                    <p>BH, Brasil</p>
+                    <img src={ LikedFilled } />
+                </div>
+                <div className="project-card d-flex jc-center al-center fd-cloumn">
+                    <div className="thumb tertiary-background"></div>
+                    <h3>João Silvia</h3>
+                    <p>BH, Brasil</p>
+                    <img src={ LikedFilled } />
+                </div>
+                <div className="project-card d-flex jc-center al-center fd-cloumn">
+                    <div className="thumb tertiary-background"></div>
+                    <h3>João Silvia</h3>
+                    <p>BH, Brasil</p>
+                    <img src={ LikedFilled } />
+                </div>
+                <div className="project-card d-flex jc-center al-center fd-cloumn">
                     <div className="thumb tertiary-background"></div>
                     <h3>João Silvia</h3>
                     <p>BH, Brasil</p>
