@@ -1,6 +1,6 @@
 import Header from "../Componentes/Header/Header"
-import Banner from "../Componentes/Banner/Banner"
 import Button from "../Componentes/Button/Button"
+import Hero from "../Componentes/Hero/Hero"
 import Footer from "../Componentes/Footer/Footer"
 
 function Home () {
@@ -9,7 +9,9 @@ function Home () {
         <Header />
         <h1>Home</h1>
         <p>Subtitulo</p>
-        <Banner title="Home" image="about.jpg"/>
+        <div className="container">
+            <Hero />
+        </div>
         <Button buttonStyle="primary" arrow >Luis Gostoso</Button>
         <Footer />
         </>
