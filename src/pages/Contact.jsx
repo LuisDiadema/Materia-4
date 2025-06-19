@@ -8,9 +8,11 @@ function Contact () {
         <>
         <Header />
         <Banner title="Contact" image="contact.jpg" />
+
         <div className="container">
             <ContactForm />
         </div>
+        
         <Footer />
         </>
     )
