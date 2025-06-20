@@ -24,8 +24,12 @@ nav a:hover {
     color: #0C70F2;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 @media ( max-width: 768px ) {
-    nav .open {
+    nav.open {
         display: flex;
         align-items: end;
     }
@@ -61,5 +65,19 @@ nav a:hover {
         margin: 0 0 10px 0;
         text-decoration: none;
         width: 100%;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .close-btn {
+        background: none;
+        border: none;
+        color: white;
+        font-size: 25px;
+        margin: 0 0 12px;
+        padding: 12px;
+        width: fit-content;
     }
 }
