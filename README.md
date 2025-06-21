@@ -1,14 +1,14 @@
-# Materia 4 do Curso de Engenharia de Software da escola DNC
+## Materia 4 do Curso de Engenharia de Software da escola DNC
 
-## React
+# React
 
-1. O que é React
+1. O que é React.
 
-2. NOde.js e NPM
+2. NOde.js e NPM.
 
-3. Criando CSS base
+3. Criando CSS base.
 
-4. Criando rotas da aplicação
+4. Criando rotas da aplicação.
 
 
 # React + Vite
