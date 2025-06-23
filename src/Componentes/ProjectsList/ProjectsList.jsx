@@ -9,7 +9,7 @@ import like from '../../assets/like.svg'
 import { getApiData } from '../../services/apiServices'
 
 function ProjectsList () {
-    const [projects, setProjects] = useState()
+    const [projects, setProjects] = useState([])
 
     useEffect(() => {
         const fetchData = async () => {
@@ -33,57 +33,17 @@ function ProjectsList () {
             <div className="projects-grid">
                 {
                     projects.map((project) => (
-                        <div key={project.id}></div>
+                        <div className="project-card jc-center al-center fd-center" key={project.id}>
+                            <div 
+                                className="thumb tertiary-background"
+                                style={{ backgroundImage: `url(${project.thumb})`}}
+                            ></div>
+                            <h3>{project.title}</h3>
+                            <p>{project.subtitle}</p>
+                            <img src= { likeFilled } height="20px" />
+                        </div>
                     ))
                 }
-                <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb tertiary-background"></div>
-                    <h3>Luisinho Diadema</h3>
-                    <p>SP, Diadema</p>
-                    <img src= { likeFilled } height="20px" />
-                </div>
-                <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb tertiary-background"></div>
-                    <h3>Luisinho Diadema</h3>
-                    <p>SP, Diadema</p>
-                    <img src= { likeFilled } height="20px" />
-                </div>
-                <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb tertiary-background"></div>
-                    <h3>Luisinho Diadema</h3>
-                    <p>SP, Diadema</p>
-                    <img src= { likeFilled } height="20px" />
-                </div>
-                <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb tertiary-background"></div>
-                    <h3>Luisinho Diadema</h3>
-                    <p>SP, Diadema</p>
-                    <img src= { likeFilled } height="20px" />
-                </div>
-                <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb  tertiary-background"></div>
-                    <h3>Luisinho Diadema</h3>
-                    <p>SP, Diadema</p>
-                    <img src= { likeFilled } height="20px" />
-                </div>
-                <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb tertiary-background"></div>
-                    <h3>Luisinho Diadema</h3>
-                    <p>SP, Diadema</p>
-                    <img src= { likeFilled } height="20px" />
-                </div>
-                <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb tertiary-background"></div>
-                    <h3>Luisinho Diadema</h3>
-                    <p>SP, Diadema</p>
-                    <img src= { likeFilled } height="20px" />
-                </div>
-                <div className="project-card jc-center al-center fd-center">
-                    <div className="thumb tertiary-background"></div>
-                    <h3>Luisinho Diadema</h3>
-                    <p>SP, Diadema</p>
-                    <img src= { likeFilled } height="20px" />
-                </div>
             </div>
         </div>
     )
