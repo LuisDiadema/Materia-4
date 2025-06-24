@@ -51,6 +51,7 @@ function ContactForm () {
                             className="form-input"
                             type="text"
                             id="name"
+                            name="name"
                             placeholder="Name *"
                             onChange={handleChange}
                         />
@@ -58,6 +59,7 @@ function ContactForm () {
                             className="form-input"
                             type="email"
                             id="email"
+                            name="email"
                             placeholder="E-mail *"
                             onChange={handleChange}
                         />
