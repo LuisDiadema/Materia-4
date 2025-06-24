@@ -28,13 +28,13 @@ function ContactForm () {
                         <textarea 
                             className="form-input"
                             id="message"
-                            name="mesage" 
+                            name="message" 
                             placeholder="Mensagem *"
-                            row="4"
+                            rows="4"
                         ></textarea>
                     </div>
-                    <div className="al-center d-flex jc-end from-group">
-                        <Button type="submit" buttonStyle="primary">
+                    <div className="al-center d-flex jc-end form-group">
+                        <Button type="submit" buttonStyle="secondary">
                             Enviar
                         </Button>
                     </div>
