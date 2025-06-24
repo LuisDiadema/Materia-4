@@ -11,11 +11,32 @@ function ContactForm () {
         message: ''
     })
     const [isFormValid, setIsFormValid] = useState(false) 
+    const [formSubmitLoading, setFormSubmitLoading] = useState(false)
+    const [formSubmitted, setFormSubmitted] = useState(false)
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         if (isFormValid) {
-            null
+            setFormSubmitLoading(true)
+            try {
+                const response = await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ ...formData, access_key: "bca187a9-b251-453e-bb18-34d4c26ef9c5" })
+                })
+
+                if (response.ok) {
+                    setFormSubmitted(true)
+                } else {
+                    alert('Erro ao enviar!')
+                }
+            } catch (e) {
+                alert('Error: ', e)
+            } finally {
+                setFormSubmitLoading(false)
+            }
         } 
     }
 
@@ -45,7 +66,7 @@ function ContactForm () {
         <div>
             <div className="contact-form d-flex fd-column al-center">
                 <h2>We love meeting new people and helping them.</h2>
-                <form>
+                <form onSubmit={handleSubmit}>
                     <div className="d-flex form-group">
                         <input 
                             className="form-input"
@@ -75,7 +96,8 @@ function ContactForm () {
                         ></textarea>
                     </div>
                     <div className="al-center d-flex jc-end form-group">
-                        <Button type="submit" buttonStyle="secondary" disabled={!isFormValid}>
+                        {formSubmitted && <p className="text-primary">Envio concluido com sucesso!</p>}
+                        <Button type="submit" buttonStyle="secondary" disabled={!isFormValid || formSubmitLoading}>
                             Enviar
                         </Button>
                     </div>
