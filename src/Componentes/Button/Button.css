@@ -10,6 +10,11 @@
     transition: background-color 0.3s ease;
 }
 
+.unstyled {
+    background: white;
+    padding: 0;
+}
+
 /* --Primary-- */
 
 .button.primary {

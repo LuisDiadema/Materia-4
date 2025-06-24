@@ -1,3 +1,4 @@
+import { useContext } from 'react'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
 
 // Pages
@@ -8,8 +9,15 @@ import Contact from './pages/Contact'
 
 // Utils
 import ScrollToTop from './Utils/ScrollTop'
+import { AppContext } from './Contexts/AppContext'
 
 function App() {
+  const appContext = useContext(AppContext)
+
+  if (appContext.loading) {
+    return 'Loading...'
+  }
+  
   return (
     <Router>
       <ScrollToTop />

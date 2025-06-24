@@ -1,3 +1,4 @@
+import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 
 // Assets
@@ -10,14 +11,24 @@ import iconInstagram from '../../assets/icon-instagram.svg'
 import iconTwitter from '../../assets/icon-twitter.svg'
 import iconLinkedin from '../../assets/icon-linkedin.svg'
 
+// Componentes
+import Button from '../Button/Button'
+
+// Context
+import { AppContext } from '../../Contexts/AppContext'
+
 function Footer () {
+    const appContext = useContext(AppContext)
+    const changeLanguage = (country) => {
+        appContext.setLanguage(country)
+    }
     return (
         <footer>
             <div className="container">
                 <div className="d-flex jc-space-between mobile-fd-column">
                     <div className="footer-logo-col">
                         <img src={ Logo } className="footer-logo"/>
-                        <p className="gray-1-color">A escola que prepara você para as profissões em alta no mercado de trabalho</p>
+                        <p className="gray-1-color">{appContext.languages[appContext.language].general.footerLogoText}</p>
                         <div className="d-flex social-links">
                             <a href="https://www.facebook.com/profile.php?id=61573785916713&locale=pt_BR" target="_blank">
                                 <img src={ iconFacebook } alt="" />
@@ -37,10 +48,10 @@ function Footer () {
                         <div className="footer-col">
                             <h3>Pages</h3>
                             <ul>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="About">About</Link></li>
-                                <li><Link to="Projects">Projects</Link></li>
-                                <li><Link to="Contact">Contact</Link></li>
+                                <li><Link to="/">{appContext.languages[appContext.language].menu.home}</Link></li>
+                                <li><Link to="About">{appContext.languages[appContext.language].menu.about}</Link></li>
+                                <li><Link to="Projects">{appContext.languages[appContext.language].menu.projects}</Link></li>
+                                <li><Link to="Contact">{appContext.languages[appContext.language].menu.contact}</Link></li>
                             </ul>
                         </div>
                         <div className="footer-col">
@@ -54,8 +65,12 @@ function Footer () {
                 <div className="d-flex jc-space-between footer-copy">
                     <p className="grey-1-color">Copyright © DNC - 2024</p>
                     <div className="langs-area d-flex">
-                        <img src={ iconBrasil } height="29px" />
-                        <img src={ iconUsa } height="29px" />
+                        <Button buttonStyle="unstyled" onClick={() => changeLanguage('br')}>
+                            <img src={ iconBrasil } height="29px" />
+                        </Button>
+                        <Button buttonStyle="unstyled" onClick={() => changeLanguage('en')}>
+                            <img src={ iconUsa } height="29px" />
+                        </Button>
                     </div>
                 </div>
             </div>
