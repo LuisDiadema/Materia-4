@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useContext, useState, useEffect } from 'react'
 import './ProjectsList.css'
 
 // Assets
@@ -7,6 +7,9 @@ import like from '../../assets/like.svg'
 
 // Utils
 import { getApiData } from '../../services/apiServices'
+
+// Contexts
+import { AppContext } from '../../contexts/AppContext'
 
 function ProjectsList () {
     const [projects, setProjects] = useState()
@@ -24,11 +27,13 @@ function ProjectsList () {
         fetchData()
     }, [])
 
+    const appContext = useContext(AppContext)
+
     return (
         <div className="projects-section">
             <div className="projects-hero">
-                <h2>Follow Our Projects</h2>
-                <p>Follow Our Projects</p>
+                <h2>{appContext.languages[appContext.language].projects.title}</h2>
+                <p>{appContext.languages[appContext.language].projects.subtitle}</p>
             </div>
             <div className="projects-grid">
                 {
