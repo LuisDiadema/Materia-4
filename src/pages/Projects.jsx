@@ -6,7 +6,7 @@ import Footer from "../Componentes/Footer/Footer"
 import ProjectsList from '../Componentes/ProjectsList/ProjectsList'
 
 // Context
-import { AppContext } from '../contexts/AppContext'
+import { AppContext } from '../Contexts/AppContext'
 
 function Projects () {
     const appContext = useContext(AppContext)

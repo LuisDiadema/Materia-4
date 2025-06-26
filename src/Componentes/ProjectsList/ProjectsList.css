@@ -31,6 +31,10 @@
     width: 100%;
 }
 
+.project-card button {
+    margin: 0 auto;
+}
+
 .project-card h3 {
     font-size: 25px;
     margin: 20px 0 0 0;

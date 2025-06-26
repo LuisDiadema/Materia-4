@@ -6,7 +6,7 @@ import AboutText from '../Componentes/AboutText/AboutText'
 import Footer from '../Componentes/Footer/Footer'
 
 // Contexts
-import { AppContext } from '../contexts/AppContext'
+import { AppContext } from '../Contexts/AppContext'
 
 function About () {
     const appContext = useContext(AppContext)

@@ -6,7 +6,7 @@ import Footer from '../Componentes/Footer/Footer'
 import ContactForm from '../Componentes/ContactForm/ContactForm'
 
 // Contexts
-import { AppContext } from '../contexts/AppContext'
+import { AppContext } from '../Contexts/AppContext'
 
 function Contact () {
     const appContext = useContext(AppContext)

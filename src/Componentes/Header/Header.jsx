@@ -9,7 +9,7 @@ import Logo from '../../assets/dnc-logo.svg'
 import Button from '../Button/Button'
 
 // Context
-import { AppContext } from '../../contexts/AppContext'
+import { AppContext } from '../../Contexts/AppContext'
 
 function Header () {
     const [isOpen, setIsOpen] = useState(false)

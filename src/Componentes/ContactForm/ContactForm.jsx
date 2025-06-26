@@ -5,7 +5,7 @@ import './ContactForm.css'
 import Button from '../Button/Button'
 
 // Context
-import { AppContext } from '../../contexts/AppContext'
+import { AppContext } from '../../Contexts/AppContext'
 
 function ContactForm () {
     const [formData, setFormData] = useState({

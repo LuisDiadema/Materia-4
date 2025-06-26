@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import './AboutText.css'
 
 // Context
-import { AppContext } from '../../contexts/AppContext'
+import { AppContext } from '../../Contexts/AppContext'
 
 function AboutText () {
     const appContext = useContext(AppContext)
