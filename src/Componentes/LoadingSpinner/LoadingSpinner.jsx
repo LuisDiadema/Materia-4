@@ -1,5 +1,5 @@
 import './LoadingSpinner.css'
-import loadingSpinnerGif from '../../assets/LoadingSpinner.gif'
+import loadingSpinnerGif from '../../assets/loadingSpinner.gif'
 
 function LoadingSpinner () {
     return (
